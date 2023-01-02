@@ -243,6 +243,11 @@
   top: 0;
   z-index: 10;
 }
+@media screen and (max-width: 567px) {
+  .food-navbar-section {
+    display: none;
+  }
+}
 .food-navbar-section .food-navbar-section__nav {
   padding-top: 20px;
   padding-left: 16px;
@@ -257,7 +262,7 @@
   height: 60px;
 }
 .food-navbar-section .food-navbar-section__nav .row .food-col {
-  overflow: auto;
+  overflow-x: auto !important;
 }
 .food-navbar-section .food-navbar-section__nav .row .food-col ul {
   display: flex;
@@ -301,7 +306,7 @@
 .dominos-mobile .deliver-col .contain .heading-blue {
   font-family: "Antonio", sans-serif !important;
   color: #007eb0;
-  font-size: 40px;
+  font-size: 30px;
   margin-bottom: 0.5rem;
   font-weight: bold;
   line-height: 1.2;
@@ -311,7 +316,8 @@
   font-family: "Antonio", sans-serif !important;
   font-weight: bold;
   color: #dd2237;
-  font-size: 50px;
+  font-size: 30px;
+  letter-spacing: 4px;
 }
 .dominos-mobile .deliver-col .contain .paragraph-left p {
   font-family: "Antonio", sans-serif !important;
@@ -346,13 +352,10 @@
   width: 100%;
   height: 100%;
 }
-@media screen and (width: 768px) {
-  .dominos-mobile .deliver-col .contain .heading-blue {
-    font-size: 20px;
-    color: orange;
-  }
-}
 
+.location-section {
+  padding: 20px 0px 20px 20px;
+}
 .location-section .follow-col .heading-blue {
   font-family: "Antonio", sans-serif !important;
   color: #007eb0;
@@ -366,7 +369,8 @@
   font-family: "Antonio", sans-serif !important;
   font-weight: bold;
   color: #dd2237;
-  font-size: 50px;
+  font-size: 30px;
+  letter-spacing: 4px;
 }
 .location-section .follow-col .paragraph-left p {
   font-family: "Antonio", sans-serif !important;
@@ -403,10 +407,16 @@
   height: 100%;
 }
 
+.gifts {
+  padding: 20px 20px 20px 0;
+}
+.gifts .gift-img-col img {
+  width: 100%;
+  height: 100%;
+}
 .gifts .gift-col {
-  align-items: center;
+  padding-top: 100px;
   text-align: end;
-  justify-content: flex-end;
 }
 .gifts .gift-col .heading-red {
   font-family: "Antonio", sans-serif !important;
@@ -421,8 +431,9 @@
   font-family: "Antonio", sans-serif !important;
   font-weight: bold;
   color: #0078AC;
-  font-size: 40px;
+  font-size: 30px;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 .gifts .gift-col .paragraph-right p {
   font-family: "Antonio", sans-serif !important;
@@ -449,4 +460,186 @@
 .gifts .gift-col .btn button i {
   color: white;
   padding-right: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .text-red .red-h1 {
+    font-size: 25px !important;
+  }
+  .paragraph-left p {
+    font-size: 15px !important;
+  }
+  .heading-blue .blue-h1 {
+    font-size: 10px !important;
+  }
+  .heading-red .red-h1 {
+    font-size: 10px !important;
+  }
+  .text-blue .blue-h1 {
+    font-size: 25px !important;
+  }
+  .paragraph-right p {
+    font-size: 15px !important;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .text-red .red-h1 {
+    font-size: 30px !important;
+  }
+  .paragraph-left p {
+    font-size: 12px !important;
+  }
+  button {
+    padding: 5px 11px !important;
+  }
+  button span {
+    font-size: 10px !important;
+  }
+  .text-red .red-h1 {
+    font-size: 30px !important;
+  }
+  .paragraph-right p {
+    font-size: 12px !important;
+  }
+}
+@media screen and (min-width: 0) and (max-width: 576px) {
+  .text-red .red-h1 {
+    font-size: 30px !important;
+  }
+  .paragraph-left p {
+    font-size: 12px !important;
+  }
+  button {
+    padding: 5px 11px !important;
+  }
+  button span {
+    font-size: 10px !important;
+  }
+  .text-red .red-h1 {
+    font-size: 30px !important;
+  }
+  .paragraph-right p {
+    font-size: 12px !important;
+  }
+}
+.createPizza {
+  height: 600px;
+  background-image: url(https://dominospizza.az/static/media/create-your-own-banner.436a15dd.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.createPizza__banner {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 827px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .createPizza__banner {
+    height: 120px;
+    width: 403px;
+  }
+}
+@media (max-width: 568px) {
+  .createPizza__banner {
+    height: 76px;
+    width: 255px;
+  }
+}
+.createPizza__banner__btn {
+  position: absolute;
+  bottom: -20px;
+  right: 10%;
+  background: red;
+  padding: 10px 22px;
+  min-width: 64px;
+  background-color: #D2112C;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.createPizza__banner__btn span {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Antonio", sans-serif !important;
+  text-transform: uppercase;
+}
+.createPizza__banner__btn i {
+  color: white;
+  padding-right: 5px;
+}
+.createPizza__banner img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.footer-page .container .row {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+.footer-page .container .row .list-item-line {
+  margin-right: 2rem;
+  padding: 25px 0;
+}
+.footer-page .container .row .list-item-line a {
+  font-size: 14px;
+  color: rgb(164, 164, 164);
+  font-family: "Open Sans", sans-serif;
+  margin-right: 15px !important;
+}
+.footer-page .container .row .list-item-line a img {
+  width: 70px;
+  height: 70px;
+}
+.footer-page .container .row .list-item-line .vl {
+  border-left: 1px solid gray;
+  height: 50px;
+}
+.footer-page .container .row .footer-app a .play {
+  width: 129px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+.footer-page .container .row .footer-app a .store {
+  width: 102px;
+  height: 34px;
+  filter: grayscale(100%);
+}
+.footer-page .container .row .footer-app a .gallery {
+  width: 113px;
+  height: 34px;
+  filter: grayscale(100%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-page .container .row .footer-socials a img {
+  height: 40px;
+  filter: grayscale(100%);
+  padding: 4px;
+}
+.footer-page .container .row .footer-cards .visa {
+  filter: grayscale(100%);
+  padding: 4px;
+  width: 63px;
+  height: 30px;
+}
+.footer-page .container .row .footer-cards .pay {
+  filter: grayscale(100%);
+  padding: 4px;
+  width: 94px;
+  height: 34px;
+}
+.footer-page .container .row .vl {
+  height: 45px !important;
+  border-left: 1px solid gray;
 }/*# sourceMappingURL=main.css.map */
