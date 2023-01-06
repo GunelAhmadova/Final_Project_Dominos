@@ -371,4 +371,190 @@
     flex-wrap: wrap !important;
     margin: 0 !important;
   }
+}
+
+.pizza-size {
+  width: 960px;
+  height: 590px;
+}
+.pizza-size .row .img-col {
+  position: relative;
+}
+.pizza-size .row .img-col .pizza-img {
+  position: absolute;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.pizza-size .row .info-col {
+  position: relative;
+  border: 1px solid black;
+  background-color: white;
+  padding: 0;
+  padding-left: 10px;
+}
+.pizza-size .row .info-col .pizza-info {
+  position: relative;
+  height: 900px;
+}
+.pizza-size .row .info-col .pizza-info .title p {
+  color: #585858;
+  font-size: 16px;
+  font-weight: bold;
+}
+.pizza-size .row .info-col .pizza-info .fav-icon {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+.pizza-size .row .info-col .pizza-info .fav-icon i {
+  font-size: 35px;
+  color: #d3d3d3;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head {
+  background-color: #d2112c;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity {
+  display: flex;
+  justify-content: space-between;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form .value-button {
+  display: inline-block;
+  border: none;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  padding: px 0;
+  background: red;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form .value-button:hover {
+  cursor: pointer;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form form #decrease {
+  margin-right: -4px;
+  border-radius: 7px 0 0 8px;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form form #increase {
+  margin-left: -5px;
+  border-radius: 0 8px 8px 0;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .increase-btn form input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 42px;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .price {
+  display: flex;
+  justify-content: center;
+}
+.pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity .price span {
+  text-align: center;
+}
+.pizza-size .choose-size {
+  display: flex;
+}
+.pizza-size .choose-size .small-pizza {
+  margin-right: 10px;
+  display: flex;
+  background-color: #f8f8f8;
+  padding: 15px;
+  width: 180px;
+  border-radius: 10px;
+}
+.pizza-size .choose-size .small-pizza .sm-img {
+  margin-right: 5px;
+  width: 38px;
+  height: 38px;
+}
+.pizza-size .choose-size .small-pizza .sm-img img {
+  width: 100%;
+  filter: grayscale(100%);
+}
+.pizza-size .choose-size .small-pizza .sm-price h2 {
+  margin-bottom: 0 !important;
+  font-size: 14px;
+  color: #585858;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif !important;
+}
+.pizza-size .choose-size .small-pizza .sm-price h3 {
+  font-size: 12px;
+  color: #686868;
+  background-color: rgba(239, 239, 239, 0.937254902);
+}
+.pizza-size .choose-pasty {
+  display: flex;
+}
+.pizza-size .choose-pasty .classic-pasty {
+  background-image: url(https://s3.eu-west-3.amazonaws.com/ppost/Classic-Crust.png);
+  background-repeat: no-repeat;
+  background-position: center -30px;
+  background-size: cover;
+  border: 1px solid #f2f2f2;
+  color: black;
+  border-radius: 10px;
+  margin-left: 10px;
+  height: 5em;
+  width: 161px;
+  text-transform: capitalize;
+  position: relative;
+}
+.pizza-size .choose-pasty .classic-pasty .pasty-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pizza-size .choose-pasty .classic-pasty .title {
+  padding-left: 5px;
+}
+.pizza-size .choose-pasty .classic-pasty .title span {
+  font-size: 12px;
+}
+.pizza-size .choose-ingrident h1 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.pizza-size .choose-ingrident #accordion .card {
+  border: none !important;
+}
+.pizza-size .choose-ingrident #accordion .card .card-header {
+  background-color: white;
+}
+.pizza-size .choose-ingrident #accordion .card .card-header h5 {
+  position: relative;
+}
+.pizza-size .choose-ingrident #accordion .card .card-header h5 i {
+  border-radius: 50%;
+  padding: 3px;
+  color: #585858;
+  background-color: #d3d3d3;
+  position: absolute;
+  right: 0;
+}
+.pizza-size .choose-ingrident #accordion .card .card-header h5 .iactive {
+  transform: rotateZ(180deg);
+}
+.pizza-size .choose-ingrident #accordion .card .check-box .card-body .form-check .form-check-input {
+  color: red;
+  background-color: red;
+}
+.pizza-size .choose-ingrident #accordion .card .check-box .card-body .form-check .form-check-label {
+  color: red;
 }/*# sourceMappingURL=pizza.css.map */
