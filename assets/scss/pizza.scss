@@ -805,16 +805,24 @@
             font-weight: bold;
         }
 
-        #accordion {
+        .accordion {
 
 
-            .card {
+            .accordion-item {
                 border: none !important;
+                border-bottom: 1px solid #e3e3e3 !important;
 
-                .card-header {
-                    background-color: white;
+                .accordion-header {
+                    .accordion-button {
+                        color: #585858;
+                        font-weight: 700;
+                        box-shadow: none;
+                        border: none !important;
+                        background-color: white;
 
-                    h5 {
+                    }
+
+                    h2 {
                         position: relative;
 
                         i {
@@ -833,22 +841,37 @@
                     }
                 }
 
-                .check-box {
-                    .card-body {
-                        .form-check {
-                            .form-check-input {
-                                color: red;
-                                background-color: red;
-                            }
+                .accordion-collapse {
+                    .bodyWrapper {
+                        display: flex;
 
-                            .form-check-label {
-                                color: red;
+                        .accordion-body {
+
+                            .form-check {
+
+                                .form-check-input {
+                                    color: red;
+                                    border-color: red;
+                                }
+
+                                .form-check-input:checked {
+                                    background-color: red;
+                                }
+
+                                .form-check-label::before {
+                                    background-color: green !important;
+                                }
+
+                                .form-check-label {
+                                    color: #616161
+                                }
                             }
                         }
                     }
-                }
 
+                }
             }
+
         }
     }
 }

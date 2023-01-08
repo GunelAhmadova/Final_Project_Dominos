@@ -526,16 +526,21 @@
   font-size: 20px;
   font-weight: bold;
 }
-.pizza-size .choose-ingrident #accordion .card {
+.pizza-size .choose-ingrident .accordion .accordion-item {
   border: none !important;
+  border-bottom: 1px solid #e3e3e3 !important;
 }
-.pizza-size .choose-ingrident #accordion .card .card-header {
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-header .accordion-button {
+  color: #585858;
+  font-weight: 700;
+  box-shadow: none;
+  border: none !important;
   background-color: white;
 }
-.pizza-size .choose-ingrident #accordion .card .card-header h5 {
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-header h2 {
   position: relative;
 }
-.pizza-size .choose-ingrident #accordion .card .card-header h5 i {
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-header h2 i {
   border-radius: 50%;
   padding: 3px;
   color: #585858;
@@ -543,13 +548,22 @@
   position: absolute;
   right: 0;
 }
-.pizza-size .choose-ingrident #accordion .card .card-header h5 .iactive {
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-header h2 .iactive {
   transform: rotateZ(180deg);
 }
-.pizza-size .choose-ingrident #accordion .card .check-box .card-body .form-check .form-check-input {
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-collapse .bodyWrapper {
+  display: flex;
+}
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-collapse .bodyWrapper .accordion-body .form-check .form-check-input {
   color: red;
+  border-color: red;
+}
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-collapse .bodyWrapper .accordion-body .form-check .form-check-input:checked {
   background-color: red;
 }
-.pizza-size .choose-ingrident #accordion .card .check-box .card-body .form-check .form-check-label {
-  color: red;
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-collapse .bodyWrapper .accordion-body .form-check .form-check-label::before {
+  background-color: green !important;
+}
+.pizza-size .choose-ingrident .accordion .accordion-item .accordion-collapse .bodyWrapper .accordion-body .form-check .form-check-label {
+  color: #616161;
 }/*# sourceMappingURL=pizza.css.map */

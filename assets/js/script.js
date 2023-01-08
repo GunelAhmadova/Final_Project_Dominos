@@ -42,5 +42,3 @@ cardHeader.addEventListener("click", function () {
     let chevron=document.querySelector(".i").classList.toggle("iactive")
 
 })
-
-
