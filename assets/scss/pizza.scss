@@ -294,11 +294,11 @@
 }
 
 .food-navbar-section {
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
     background-color: white;
     position: sticky;
     top: 0;
     z-index: 10;
+
 
     @media screen and (max-width:567px) {
         display: none;
@@ -365,9 +365,77 @@
                     color: #7A7A7A;
 
                 }
+
+
             }
         }
+
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+
     }
+
+
+
+    .pizza-filter {
+        margin-top: 1rem;
+
+        .container {
+            border-radius: 5px;
+            overflow: auto;
+
+            .navspy {
+                padding: 0;
+
+                .nav-pills {
+
+                    .nav-item {
+
+                        .nav-link {
+                            color: #d2112c;
+                            font-size: 20px;
+                            font-family: "Open Sans", "Helvetica Neue", sans-serif;
+                            font-weight: bold;
+                            margin: 0;
+                            font-weight: bold;
+                            opacity: 0.5;
+                        }
+
+                        .active {
+                            opacity: 1;
+                            background-color: unset;
+                        }
+                    }
+                }
+            }
+
+            // .pizzas {
+
+
+            //     display: flex;
+            //     justify-content: center;
+            //     align-items: center;
+
+            //     .pizza {
+            //         overflow: hidden;
+            //         white-space: nowrap;
+            //         padding: 0 12px;
+            //         border-radius: 50px;
+            //         background: white;
+
+            //         span {
+
+            //             text-overflow: ellipsis;
+            //             color: #d2112c;
+            //             font-size: 20px;
+            //             font-family: "Open Sans", "Helvetica Neue", sans-serif;
+            //             font-weight: bold;
+
+            //         }
+            //     }
+            // }
+        }
+    }
+
 
     @media screen and (max-width:768px) {
         .domino-col {
@@ -376,40 +444,6 @@
 
         .basket-col {
             display: none !important;
-        }
-    }
-}
-
-.pizza-filter {
-    margin-top: 1rem;
-    background-color: white;
-
-    .container {
-        border-radius: 5px;
-        overflow: auto;
-
-        .pizzas {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .pizza {
-                overflow: hidden;
-                white-space: nowrap;
-                padding: 0 12px;
-                border-radius: 50px;
-                background: white;
-
-                span {
-
-                    text-overflow: ellipsis;
-                    color: #d2112c;
-                    font-size: 20px;
-                    font-family: "Open Sans", "Helvetica Neue", sans-serif;
-                    font-weight: bold;
-
-                }
-            }
         }
     }
 }
@@ -532,36 +566,48 @@
 
 }
 
+.modal-dialog {
+    max-width: 1000px;
+
+    .modal-header {
+        display: none;
+    }
+
+    .modal-footer {
+        display: none;
+    }
+}
+
 .pizza-size {
     width: 960px;
     height: 590px;
-   
+
     .row {
 
         .img-col {
-            position: relative;
+            // position: relative;
 
             .pizza-img {
-                position: absolute;
-                object-fit: contain;
-                
+                // position: absolute;
+                // object-fit: contain;
+
             }
 
         }
 
         .info-col {
-            position: relative;
-            border: 1px solid black;
+            // position: relative;
             background-color: white;
             padding: 0;
-            padding-left: 10px; 
-            
+            padding-left: 10px;
+
 
 
             .pizza-info {
-                position: relative;
-                height: 900px;
-               
+                // position: relative;
+                height: 500px;
+                overflow-y: scroll;
+
                 .title {
                     p {
                         color: #585858;
@@ -571,9 +617,9 @@
                 }
 
                 .fav-icon {
-                    position: absolute;
-                    right: 5px;
-                    top: 5px;
+                    // position: absolute;
+                    display: flex;
+                    justify-content: space-between;
 
                     i {
                         font-size: 35px;
@@ -582,10 +628,10 @@
                 }
 
                 .pizza-head {
-
-                    background-color: #d2112c;
+                    background-color: white;
                     position: sticky;
-                    top: 0; 
+                    top: 0;
+                    z-index: 99;
 
                     h1 {}
 
@@ -675,7 +721,7 @@
         }
     }
 
-    .choose-size { 
+    .choose-size {
 
         display: flex;
 

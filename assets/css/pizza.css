@@ -201,7 +201,6 @@
 }
 
 .food-navbar-section {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   background-color: white;
   position: -webkit-sticky;
   position: sticky;
@@ -218,6 +217,7 @@
   padding-left: 16px;
   padding-right: 16px;
   width: 100%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 .food-navbar-section .food-navbar-section__nav .row {
   width: 100%;
@@ -255,6 +255,29 @@
   width: 35px;
   height: 35px;
 }
+.food-navbar-section .pizza-filter {
+  margin-top: 1rem;
+}
+.food-navbar-section .pizza-filter .container {
+  border-radius: 5px;
+  overflow: auto;
+}
+.food-navbar-section .pizza-filter .container .navspy {
+  padding: 0;
+}
+.food-navbar-section .pizza-filter .container .navspy .nav-pills .nav-item .nav-link {
+  color: #d2112c;
+  font-size: 20px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  font-weight: bold;
+  opacity: 0.5;
+}
+.food-navbar-section .pizza-filter .container .navspy .nav-pills .nav-item .active {
+  opacity: 1;
+  background-color: unset;
+}
 @media screen and (max-width: 768px) {
   .food-navbar-section .domino-col {
     display: none;
@@ -262,34 +285,6 @@
   .food-navbar-section .basket-col {
     display: none !important;
   }
-}
-
-.pizza-filter {
-  margin-top: 1rem;
-  background-color: white;
-}
-.pizza-filter .container {
-  border-radius: 5px;
-  overflow: auto;
-}
-.pizza-filter .container .pizzas {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.pizza-filter .container .pizzas .pizza {
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 0 12px;
-  border-radius: 50px;
-  background: white;
-}
-.pizza-filter .container .pizzas .pizza span {
-  text-overflow: ellipsis;
-  color: #d2112c;
-  font-size: 20px;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: bold;
 }
 
 .pizza-cards {
@@ -373,28 +368,28 @@
   }
 }
 
+.modal-dialog {
+  max-width: 1000px;
+}
+.modal-dialog .modal-header {
+  display: none;
+}
+.modal-dialog .modal-footer {
+  display: none;
+}
+
 .pizza-size {
   width: 960px;
   height: 590px;
 }
-.pizza-size .row .img-col {
-  position: relative;
-}
-.pizza-size .row .img-col .pizza-img {
-  position: absolute;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
 .pizza-size .row .info-col {
-  position: relative;
-  border: 1px solid black;
   background-color: white;
   padding: 0;
   padding-left: 10px;
 }
 .pizza-size .row .info-col .pizza-info {
-  position: relative;
-  height: 900px;
+  height: 500px;
+  overflow-y: scroll;
 }
 .pizza-size .row .info-col .pizza-info .title p {
   color: #585858;
@@ -402,19 +397,19 @@
   font-weight: bold;
 }
 .pizza-size .row .info-col .pizza-info .fav-icon {
-  position: absolute;
-  right: 5px;
-  top: 5px;
+  display: flex;
+  justify-content: space-between;
 }
 .pizza-size .row .info-col .pizza-info .fav-icon i {
   font-size: 35px;
   color: #d3d3d3;
 }
 .pizza-size .row .info-col .pizza-info .pizza-head {
-  background-color: #d2112c;
+  background-color: white;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 .pizza-size .row .info-col .pizza-info .pizza-head .pizza-quantity {
   display: flex;
