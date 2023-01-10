@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
     $('.owl-carousel').owlCarousel();
 });
@@ -36,9 +38,49 @@ function decreaseValue() {
     document.getElementById('number').value = value;
 }
 
-let cardHeader = document.querySelector(".card-header")
-console.log(cardHeader);
-cardHeader.addEventListener("click", function () {
-    let chevron=document.querySelector(".i").classList.toggle("iactive")
+// let cardHeader = document.querySelector(".card-header")
+// cardHeader.addEventListener("click", function () {
+//     let chevron = document.querySelector(".i").classList.toggle("iactive")
 
+// })
+
+const card= document.getElementById('PizzaCard')
+const breadTitles = document.querySelectorAll(".span__bread__title")
+console.log(breadTitles);
+// let text = 'salamma dadasd asd  asd  asf asd ajsdjk asdkjasd  ajkksdj jnfdddddddd jdddd djjjjjjjjj djjjjjjjjj djjjjjjjj'
+
+breadTitles.forEach(breadTitle => {
+    let text = breadTitle.innerText;
+    if(text.length>50){
+        breadTitle.innerHTML = `${text.substring(0, 50) + '...'}`
+    }
+   
+    breadTitle.addEventListener("mouseover", function () {
+        breadTitle.innerHTML = `${text}`
+
+
+    })
+    breadTitle.addEventListener("mouseout", function(){
+        breadTitle.innerHTML = `${text.substring(0, 50) + '...'}`    
+    })
 })
+
+
+
+
+
+
+
+
+
+// breadTitle.addEventListener("mouseout", function () {
+//     breadTitle.innerHTML = `${text.substring(0, 10) + '...'}`
+    //  if(text.length>10){
+    //     breadTitle.innerHTML = `${text.substring(0, 10) + '...'}`  
+    //  } 
+    //  else{
+    //     breadTitle.innerHTML = `${text}`
+    //  }
+
+// })
+
