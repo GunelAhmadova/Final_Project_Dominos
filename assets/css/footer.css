@@ -1,0 +1,62 @@
+.footer-page .container .zirt {
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+}
+.footer-page .container .zirt .list-item-line {
+  display: inline;
+  margin-right: 2rem;
+  padding: 25px 0;
+}
+.footer-page .container .zirt .list-item-line a {
+  font-size: 14px;
+  color: rgb(164, 164, 164);
+  font-family: "Open Sans", sans-serif;
+  margin-right: 15px !important;
+}
+.footer-page .container .zirt .list-item-line a img {
+  width: 70px;
+  height: 70px;
+}
+.footer-page .container .zirt .list-item-line .vl {
+  border-left: 1px solid gray;
+  height: 50px;
+}
+.footer-page .container .zirt .footer-app a .play {
+  width: 129px;
+  height: 50px;
+  filter: grayscale(100%);
+}
+.footer-page .container .zirt .footer-app a .store {
+  width: 102px;
+  height: 34px;
+  filter: grayscale(100%);
+}
+.footer-page .container .zirt .footer-app a .gallery {
+  width: 113px;
+  height: 34px;
+  filter: grayscale(100%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.footer-page .container .zirt .footer-socials a img {
+  height: 40px;
+  filter: grayscale(100%);
+  padding: 4px;
+}
+.footer-page .container .zirt .footer-cards .visa {
+  filter: grayscale(100%);
+  padding: 4px;
+  width: 63px;
+  height: 30px;
+}
+.footer-page .container .zirt .footer-cards .pay {
+  filter: grayscale(100%);
+  padding: 4px;
+  width: 94px;
+  height: 34px;
+}
+.footer-page .container .zirt .vl {
+  height: 45px !important;
+  border-left: 1px solid gray;
+}/*# sourceMappingURL=footer.css.map */

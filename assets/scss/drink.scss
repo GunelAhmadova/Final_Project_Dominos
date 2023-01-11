@@ -1,0 +1,480 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     text-decoration: none !important;
+//     list-style: none;
+//     box-sizing: border-box !important;
+// }
+
+
+// .web-nav {
+//     height: 92px;
+//     width: 100%;
+
+//     .web-nav__row {
+//         justify-content: space-between;
+//         height: 100%;
+
+//         .web-nav__row__log-col {
+//             display: flex;
+//             align-items: center;
+//             padding: 0;
+
+//             .web-nav__row__log-col__domino-logo {
+//                 width: 255px;
+//                 height: 55px;
+
+
+//                 img {
+
+//                     width: 100%;
+
+//                     object-fit: contain;
+//                     object-position: center;
+//                 }
+//             }
+//         }
+
+//         .web-nav__row__icon-col {
+//             align-items: center;
+//             padding: 0;
+
+//             .web-nav__row__icon-col__icons {
+//                 height: 100%;
+
+
+//                 &__ul {
+//                     display: flex;
+//                     padding: 0;
+//                     margin: 0;
+//                     height: 100%;
+//                     align-items: center;
+
+//                     justify-content: space-around;
+
+//                     li {
+//                         list-style: none;
+//                         // padding: 12px;
+
+//                         a {
+//                             span {
+//                                 font-size: 12px;
+//                             }
+
+//                             img {
+//                                 width: 35px;
+//                                 height: 35px;
+//                             }
+
+//                             color: #61616161;
+
+//                         }
+//                     }
+//                 }
+//             }
+
+
+//         }
+//     }
+
+
+//     .web-nav__burger {
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         padding: 0;
+
+//         @media (min-width:576px) {
+//             display: none;
+//         }
+
+//         .hamburger {
+
+
+//             i {
+//                 color: red;
+//                 text-align: center
+//             }
+//         }
+//     }
+
+//     #hamburgerDrop {
+//         background-color: #ffffff;
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         width: 280px;
+//         z-index: 9;
+//         border: 1px solid #c8c8c8;
+//         box-shadow: 0 0 6px 0 rgb(0 0 0 / 16%);
+//         transform: translateX(-100rem);
+
+//         #x-burger {
+//             display: flex;
+//             justify-content: end;
+//             padding: 20px;
+
+//             i {
+//                 font-weight: 600;
+//                 font-size: larger;
+
+//             }
+//         }
+
+//         .hamburgerProfil {
+//             transition: width 2s;
+
+//             .img {
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: center;
+//                 margin-bottom: 15px;
+
+//                 img {
+//                     width: 80px;
+//                     height: 80px;
+//                     border-radius: 50%;
+//                 }
+
+//             }
+
+//             p {
+//                 text-align: center;
+//                 color: #3333;
+//                 font-size: 14px;
+//                 font-family: "Open Sans", sans-serif;
+
+//             }
+
+//             .btn {
+//                 display: flex;
+//                 justify-content: center;
+
+//                 button {
+//                     background-color: #0078AC;
+//                     display: flex;
+//                     align-items: center;
+//                     padding: 2px 25px;
+//                     border-radius: 5px;
+//                     border: none;
+//                     letter-spacing: 0rem;
+//                     justify-content: center;
+
+
+//                     p {
+//                         margin: 0;
+//                         color: #fff;
+//                         font-weight: 500;
+//                         font-family: 'Anton', sans-serif;
+//                         font-size: 20px;
+//                         letter-spacing: 0rem;
+//                     }
+//                 }
+//             }
+
+//             hr {
+//                 margin-top: 1rem;
+//                 margin-bottom: 1rem;
+//                 border: 0;
+//                 border-top: 1px solid rgba(0, 0, 0, 0.1);
+//             }
+
+//         }
+
+//         .hamburgerLanguage {
+//             .languages {
+//                 display: flex;
+
+//                 li {
+//                     padding: 12px;
+
+
+//                     img {
+//                         height: 30px;
+//                         width: 30px;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .hamburgerOptions {
+//             .hamburgerList {
+
+//                 a {
+//                     display: block;
+
+//                     img {
+//                         width: 27px;
+//                         height: 25px;
+//                     }
+
+//                     span {
+//                         display: inline;
+//                         color: rgb(97, 97, 97);
+
+//                     }
+//                 }
+//             }
+//         }
+
+//         .hamburgerSocial {
+//             display: flex;
+
+//             .social {
+//                 display: inline;
+
+//                 a {
+//                     img {
+//                         height: 30px;
+//                         width: 30px;
+//                     }
+
+//                 }
+//             }
+
+
+//             .call {
+//                 transform: translateX(6rem);
+
+//                 img {
+//                     width: 70px;
+//                     height: 30px;
+//                 }
+//             }
+//         }
+
+//         .hamburgerInfo {
+//             a {
+//                 padding: 10px;
+//                 display: block;
+
+//                 span {
+//                     font-size: 14px;
+//                     font-family: "Open Sans", "Helvetica Neue", sans-serif;
+//                     color: rgb(97, 97, 97);
+
+//                 }
+//             }
+
+//         }
+
+
+//     }
+
+
+
+//     @media screen and (max-width:576px) {
+//         .nav-icon {
+//             display: none;
+//         }
+
+
+//     }
+
+
+
+//     @media screen and (max-width: 768px) {
+//         .log-col {
+//             .web-nav__row__log-col__domino-logo {
+//                 img {
+//                     width: 155px;
+//                     height: 35px;
+//                 }
+//             }
+//         }
+
+//     }
+
+// }
+
+// .food-navbar-section {
+//     background-color: white;
+//     position: sticky;
+//     top: 0;
+//     z-index: 10;
+
+
+//     @media screen and (max-width:567px) {
+//         display: none;
+//     }
+
+//     .food-navbar-section__nav {
+//         padding-top: 20px;
+//         padding-left: 16px;
+//         padding-right: 16px;
+//         width: 100%;
+
+//         .row {
+//             width: 100%;
+
+
+//             .domino-col {
+//                 .domino {
+
+//                     a {
+//                         img {
+//                             width: 60px;
+//                             height: 60px;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .food-col {
+//                 overflow-x: auto !important;
+
+
+//                 ul {
+//                     display: flex;
+//                     justify-content: space-between;
+
+//                     li {
+//                         padding: 0 25px;
+
+//                         a {
+//                             img {
+//                                 height: 38px;
+//                             }
+//                         }
+
+//                         p {
+//                             font-family: "Open Sans", sans-serif;
+//                             font-size: 16px;
+//                             color: #7A7A7A;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             .basket-col {
+//                 display: flex;
+//                 justify-content: flex-end;
+
+//                 a {
+//                     img {
+//                         width: 35px;
+//                         height: 35px;
+//                     }
+
+//                     color: #7A7A7A;
+
+//                 }
+//             }
+//         }
+
+//         box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+
+//     }
+
+
+//     @media screen and (max-width:768px) {
+//         .domino-col {
+//             display: none;
+//         }
+
+//         .basket-col {
+//             display: none !important;
+//         }
+//     }
+// }
+
+.menu-item {
+    margin: 20px 0px;
+    color: $menu-item-text-color;
+    height: 95%;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    box-shadow: 0px 1px 2px $gray-color;
+    background: white;
+    cursor: pointer;
+
+    &:hover {
+        transition: 1s;
+        transform: scale(1.05);
+    }
+
+    .drink-size {
+        .nav-pills {
+            .nav-item {
+                border: 1px solid $footer-text-color;
+                border-radius: 5px;
+                font-size: 12px;
+
+                .nav-link {
+                    width: 75px;
+                    color: $footer-text-color;
+                    font-weight: bold;
+                }
+
+                .active {
+                    color: white;
+                    background-color: $blue-color;
+                }
+            }
+        }
+    }
+
+    &-img {
+        img {
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &-text {
+        padding: 10px;
+
+        // width: 90%;
+        h4 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        color: $item-text-color;
+        font-weight: lighter;
+
+        .text-head {
+            color: $item-head-text-color;
+        }
+
+        .text-description {
+            p {}
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+
+            &:hover {
+                white-space: unset;
+            }
+        }
+
+        .price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h6 {
+                font-weight: bold;
+                color: $blue-color;
+                display: inline-block;
+                font-size: 20px;
+                margin: 0 0;
+            }
+
+            span {}
+
+            .btn {
+                font-weight: bold;
+                font-size: 14px;
+            }
+        }
+    }
+}
