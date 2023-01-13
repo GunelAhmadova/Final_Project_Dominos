@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none !important;
+  list-style: none;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: black;
+}
+
+.login .container .login-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.login .container .login-img img {
+  width: 271px;
+  height: 60px;
+}
+.login .container h1 {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Open-Sans-Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+.login .container .row {
+  margin-top: 40px;
+  padding: 0;
+}
+.login .container .row .col-lg-3 {
+  display: flex;
+  padding: 0;
+}
+.login .container .row .col-lg-3 .meal img {
+  width: 55px;
+  height: 50px;
+}
+.login .container .row .col-lg-3 .title span {
+  color: white;
+  font-family: sans-serif !important;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  margin-left: 10px;
+}
+.login .container .enter {
+  display: flex;
+  justify-content: center;
+}
+.login .container .enter form {
+  margin-top: 100px;
+}
+.login .container .enter form .inpt {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.login .container .enter form .inpt input {
+  text-align: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 50px;
+  border: 2 solid white;
+  background-color: black;
+}
+.login .container .enter form .login-text span {
+  font-size: 18px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  position: relative;
+  z-index: 2;
+  justify-content: center;
+}
+.login .container .enter form .submit {
+  text-align: center;
+  margin-top: 1em;
+}
+.login .container .enter form .submit button {
+  background-color: #0078ac;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+.login .container .enter form .submit button span {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}/*# sourceMappingURL=login.css.map */

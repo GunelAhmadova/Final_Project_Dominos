@@ -1,6 +1,7 @@
 .cards {
 
     margin-top: 20px;
+    margin-bottom: 20px;
     padding: 10px 30px;
 
 
@@ -24,6 +25,10 @@
                     height: auto;
                     transition: 0.5s;
 
+                    &:hover {
+                        scale: 1.05;
+                    }
+
 
                     .card-img {
 
@@ -46,8 +51,7 @@
 
                         i {
                             font-size: 30px;
-                            color: hwb(0 55% 45%);
-
+                            color: #a4a4a4;
                         }
                     }
 
@@ -74,6 +78,26 @@
                                     font-size: 17px;
                                     text-align: left;
                                     font-family: "Open Sans", sans-serif !important;
+                                }
+
+                            }
+
+                            .drink-size {
+                                ul {
+                                    border: solid 1px #a4a4a4;
+                                    border-radius: 5px;
+
+                                    button {
+                                        padding: 8px;
+                                        width: 100px;
+
+                                        span {
+                                            font-size: 16px;
+                                            color: #616161;
+                                            font-weight: bold;
+
+                                        }
+                                    }
                                 }
 
                             }
