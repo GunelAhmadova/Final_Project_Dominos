@@ -43,10 +43,11 @@ body h1 {
 .login .containe .row {
   margin-top: 40px;
   padding-left: 30%;
-  padding-right: 20%;
+  padding-right: 28%;
 }
 .login .containe .row .col-lg-3 {
   display: flex;
+  margin-top: 10%;
 }
 .login .containe .row .col-lg-3 .meal img {
   width: 50px;
@@ -68,7 +69,7 @@ body h1 {
   justify-content: center;
 }
 .login .containe .enter form {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .login .containe .enter form .inpt {
   display: flex;

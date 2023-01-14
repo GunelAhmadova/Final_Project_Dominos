@@ -38,15 +38,16 @@ body{
         color: white;
         text-transform: uppercase;
         position: relative;
-        z-index: 2;
+        z-index: 2; 
        } 
        .row{
         margin-top: 40px;
        padding-left: 30%;
-       padding-right: 20%;
+       padding-right: 28%;
 
         .col-lg-3{
             display: flex; 
+            margin-top: 10%;
             .meal{  
                 img{
                     width: 50px;
@@ -75,7 +76,7 @@ body{
 
 
         form{ 
-            margin-top: 100px; 
+            margin-top: 50px; 
             .inpt{ 
                 display: flex;
                     justify-content: center;
